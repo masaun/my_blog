@@ -1,4 +1,5 @@
 <%= form_for :post, url: posts_path do |f| %>
+
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= @post.errors.count %>件のエラーが発生したため保存ができませんでした。</h2>
@@ -8,6 +9,7 @@
       <% end %>
       </ul>
     </div>
+
 <% end %>
 
 <p>
